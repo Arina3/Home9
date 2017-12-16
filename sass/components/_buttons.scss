@@ -1,0 +1,133 @@
+﻿.purchase-link-header, .learn-more-link {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: $secondary-color;
+    color: $mark-color;
+    font-family: $p-font;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+
+    &:hover {
+        background-color: $mark-color;
+        color: $secondary-color;
+        border: 2px solid $secondary-color;
+        font-weight: bolder;
+    }
+}
+
+.discover-link, .purchase-link-section {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: $mark-color;
+    color: $secondary-color;
+    font-family: $p-font;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $mark-color;
+        border: 2px solid $mark-color;
+        font-weight: bolder;
+    }
+}
+
+.discover-link {
+    margin: 0 auto;
+}
+
+.arrows {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    color: $secondary-color;
+    background-color: $mark-color;
+    font-family: "Font Awesome", serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        color: $mark-color;
+        background-color: $secondary-color;
+    }
+}
+
+.toggles {
+    text-align: right;
+}
+
+#button {
+    width: 14px;
+    height: 14px;
+    color: $mark-color;
+    font-family: "Font Awesome", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.88px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.socials-link {
+    color: $secondary-color;
+    font-family: "Font Awesome", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 0 20px 0 20px;
+}
+
+a.socials-link:hover {
+    display: block;
+    background-color: $mark-color;
+}
+
+a.consert-image-link:hover {
+    opacity: 0.5;
+}
+
+.app-store-link {
+    background-image: url("../images/app-store.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 162px;
+    height: 50px;
+
+    &:hover {
+        opacity:0.5;
+    }
+}
+
+.googleplay-link {
+    background-image: url("../images/google-play.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 162px;
+    height: 50px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+li.store-item {
+    padding: 10px;
+}
