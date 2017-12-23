@@ -22,6 +22,7 @@ li.song-item {
     min-width: 167px;
     text-align: left;
     padding-right: 10px;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .members-list {
@@ -32,23 +33,20 @@ li.song-item {
 
 li.member {
     position: relative;
+    overflow: hidden;
 }
 
 .member-desc {
     width: 100%;
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     left: 0;
     background-color: $mark-color;
     color: $secondary-color;
-}
 
-div.member-desc {
-    ul.members {
-    background-color: $secondary-color;}
-
-    a.socials-link {
-        display: none; }
+    &:hover {
+        bottom: 0;
+    }
 }
 
 .member-desc a:hover {
@@ -58,9 +56,17 @@ div.member-desc {
     background-color: $mark-color;
 }
 
+.socials {
+    padding: 0 10px;
+}
+
 .socials-items {
     display: flex;
     align-items: center;
+}
+
+li.socials-popup {
+    padding: 0 20px;
 }
 
 .bottom-menu-items {
@@ -70,4 +76,8 @@ div.member-desc {
 
 .instagram-image-link:hover {
     opacity: 0.5;
+}
+
+.slider li {
+    width: 100%;
 }

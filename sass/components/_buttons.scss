@@ -50,24 +50,37 @@
 .arrows {
     width: 35px;
     height: 35px;
-    display: inline-block;
-    color: $secondary-color;
+    display: flex;
     background-color: $mark-color;
-    font-family: "Font Awesome", serif;
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-align: center;
+    align-items: center;
 
     &:hover {
-        color: $mark-color;
         background-color: $secondary-color;
     }
 }
 
+i.fa.fa-chevron-left, i.fa.fa-chevron-right {
+    color: $secondary-color;
+    margin: 0 auto;
+
+    &:hover {
+        color: $mark-color;
+    }
+}
+
+i.fa.fa-arrow-right {
+    color: $mark-color;
+}
+
+i.fa.fa-facebook, i.fa-fa-twitter, i.fa.fa-google-plus:hover {
+    color: $secondary-color;
+}
+
 .toggles {
     text-align: right;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #button {
@@ -90,12 +103,11 @@
     line-height: 44px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    padding: 0 20px 0 20px;
 }
 
 a.socials-link:hover {
     display: block;
-    background-color: $mark-color;
+    opacity: 0.5;
 }
 
 a.consert-image-link:hover {
@@ -130,4 +142,14 @@ a.consert-image-link:hover {
 
 li.store-item {
     padding: 10px;
+}
+
+button {
+    color: $mark-color;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    cursor: pointer;
 }

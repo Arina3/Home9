@@ -1,10 +1,29 @@
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans.eot') format('embedded-opentype'),
+    url('../fonts/DroidSans.woff') format('woff'),
+    url('../fonts/DroidSans.ttf') format('truetype'),
+    url('../fonts/DroidSans.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans-Bold.eot') format('embedded-opentype'),
+    url('../fonts/DroidSans-Bold.woff') format('woff'),
+    url('../fonts/DroidSans-Bold.ttf')  format('truetype'),
+    url('../fonts/DroidSans-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
 h1 {
     font-family: $h1h2-font;
     color: $mark-color;
     font-size: 116px;
     font-weight: 400;
     line-height: 85.6px;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -26,7 +45,7 @@ h2.second-heading {
     margin: 0;
 }
 
-h3.third-heading {
+span.third-heading {
     color: $mark-color;
     font-family: $h3-font;
     font-size: 32px;
@@ -84,4 +103,16 @@ p.section-desc {
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
+}
+
+.like-number {
+    color: $secondary-color;
+    font-family: $likes-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h4 {
+    margin-bottom: 0;
 }
