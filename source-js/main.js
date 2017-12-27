@@ -8,9 +8,36 @@ jQuery(document).ready(function(e) {
   })
 })
 
-jQuery(window).load(function () {
+jQuery(window).ready(function () {
   jQuery('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlsContainer: ".flexslider",
+    controlNav: false,
+    directionNav: false,
+    slideshowSpeed: 4000,
+  })
+})
+
+jQuery(window).load(function () {
+  jQuery('.flexslider2').flexslider({
+    animation: "slide",
+    directionNav: false,
+    controlsContainer: ".flexslider2",
+    controlNav: false,
+    itemWidth: 380,
+    itemMargin: 20,
+    customDirectionNav: jQuery(".custom-navigation a"),
+  })
+})
+
+jQuery(window).load(function () {
+  jQuery('.flexslider3').flexslider({
+    animation: "slide",
+    controlsContainer: ".flexslider3",
+    controlNav: false,
+    directionNav: false,
+    minItems: 1,
+    customDirectionNav: jQuery(".custom-navigation a"),
   })
 })
 
